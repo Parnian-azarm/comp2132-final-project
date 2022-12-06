@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src='./js/hangman-javas.js' defer></script>
+
+  <title>Hangman Game</title>
+</head>
+<body>
+  
+<div class="contain">
+  <h1 class="cent">Hangman</h1>
+  <i class="fa fa-lasso"></i>
+  
+  <div class="float-right"> <i class="heart">♥</i> <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+  <div class="cent">
+    <img id='hangmanPic' src="./images/joaslin-hangman.png" alt="">
+    <p id='guess'>Guess The Word:</p>
+    <p id="hint"></p>
+    <p id="wordSpotlight"></p>
+    <div id="keyboard"></div>
+    <button class="btn btn-info reset" onClick="reset()">Reset</button>
+    <button id="about" class="btn btn-info" onClick="aboutbtn()">About</button>
+  </div> 
+  <div id="popup">
+    <button id="close">&#10005;</button>
+    <h2>Instruction</h2>
+    <p>Try to guess the word by using the <b>word hint</b>. You can play this game
+      by gussing the letters of the word. You have 6 wrong answers if you have 
+      more than 6 wrong answers you <b>LOSE</b>. If you guess the word
+      correctly you <b>WIN</b>.
+    </p>
+  </div>
+  <footer>Parnian Azarm &emsp; COMP2132 &emsp; Final Project</footer>
+</div>
+
+</body>
+</html>
